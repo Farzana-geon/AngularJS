@@ -1,8 +1,13 @@
 div{
+    
     background-color: chartreuse;
-    margin-left: 15px;
-    line-height: 20px;
+    line-height: 40px;
+    margin: 70px;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 10px;;
 }
 h3{
     color: forestgreen;
+    text-align: center;    
 }
