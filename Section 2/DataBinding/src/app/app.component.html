@@ -1,0 +1,16 @@
+<div>
+  <h1>Data Binding</h1>
+</div>
+<div>
+  <p>Data binding can be event binding, property binding and two way binding.String interpolation is an example of Data binding. Two way binding requires the use of ngModel directive.</p>
+</div>
+<hr>
+<div>
+<label>Username:</label>
+<input type="text" [(ngModel)] = "username">
+<p>{{username}}</p>
+<button [disabled] ="username ==''"
+(click) = "username =''">Reset Username</button>
+<div>
+
+
