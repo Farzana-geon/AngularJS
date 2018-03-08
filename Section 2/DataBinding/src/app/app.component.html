@@ -2,12 +2,7 @@
   <h1>Data Binding</h1>
 </div>
 <div>
-  <ol>
-    <li>Add an input field which updates a property via 2 way binding</li>
-    <li>Output the property via string interpolation</li>
-    <li>Add a button which may be clicked if username is not empty</li>
-    <li>Upon clicking the button, username should be set to empty</li>
-  </ol>
+  <p>Data binding can be event binding, property binding and two way binding.String interpolation is an example of Data binding. Two way binding requires the use of ngModel directive.</p>
 </div>
 <hr>
 <div>
@@ -15,8 +10,7 @@
 <input type="text" [(ngModel)] = "username">
 <p>{{username}}</p>
 <button [disabled] ="username ==''"
-(click) = "username =''"
-class = "btn btn-primary">Reset Username</button>
+(click) = "username =''">Reset Username</button>
 <div>
 
 
