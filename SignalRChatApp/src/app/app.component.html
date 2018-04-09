@@ -1,0 +1,31 @@
+<div id="main-container" style="text-align:center">
+  <h1>
+    <a href="" target="_new">
+      ASP.NET Core SignalR Chat with Angular
+    </a>
+  </h1>
+
+  <div class="container">
+    <h2>Hello {{name}}!</h2>
+    <form>
+        <div>
+            <label for="Name">Message</label>
+            <input type="text" id="userName" name="userName" [(ngModel)]="name" required>
+          </div>
+      <div>
+        <label for="message">Message</label>
+        <input type="text" id="message" name="message" [(ngModel)]="message" required>
+      </div>
+      <button type="submit" id="sendmessage"  (click) ="sendMessage()">
+        Send
+      </button>
+    </form>
+  </div>
+
+  <div class="container" *ngIf="messages.length > 0">
+    <div *ngFor="let user of users">
+      <span>{{user.name}}: {{user.message}}</span>
+    </div>
+  </div>
+
+</div>

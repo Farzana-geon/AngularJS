@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngElectron2</title>
+  <base href="./">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <!--The content below is only a placeholder and can be replaced.-->
+  <script type = "text/javascript">
+    function NotifyFunction(msg){
+        console.log("Inside JS "+event.msg );
+     const notifier = require('node-notifier');
+     const path = require('path');
+     
+        notifier.notify ({
+           
+           title: 'Alert',
+           message: msg,
+    
+     
+        
+        }
+        
+       );
+       }
+   </script>
+<div style="text-align:center">
+  <h1>
+    Electron and Angular
+  </h1>
+  <div>
+   <!-- <button (click) ="launchWindow()">Launch</button>-->
+   <!--<button type = "button" id = "notify" name = "button" onclick="NotifyFunction()">
+    Click here to trigger a notification!</button>-->
+    
+    <app-root (ALERT) = "NotifyFunction($event)">
+     
+    </app-root>
+
+  </div>
+</div>
+<app-root></app-root>
+</body>
+</html>

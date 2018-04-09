@@ -1,0 +1,27 @@
+<div>
+  <ol>
+    <li>Create 3 components: game control, even and odd</li>
+    <li>Game control component will have start and stop buttons</li>
+    <li>When starting a game, emit an event every second</li>
+    <li>The event should be listenable from outside the component</li>
+    <li>When stopping a game, no more events should get emitted</li>
+    <li>A new Odd component should get created every odd seconds. The same should happen for 
+      the Even component</li>
+    <li>Simply outut the Odd-NUMBER and Even-NUMBER in the two components</li>
+    <li>Style the element (paragraph) holding your text differently in both the components</li>
+  </ol>
+</div>
+<hr>
+<div>
+<div class="row">
+  <div class="col-xs-12">
+    <app-game-control (eventFired)="onIntervalFired($event)"></app-game-control>
+  </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+      <app-odd *ngFor ="let oddNumber of oddNumbers" [number] ="oddNumber"></app-odd>
+      <app-even *ngFor ="let evenNumber of evenNumbers" [number] ="evenNumber"></app-even>
+    </div>
+  </div>
+</div>
