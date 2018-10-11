@@ -1,0 +1,14 @@
+div{
+    background-color: lightcoral;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 10px;
+    border-block-end-color: saddlebrown;
+    border-block-end-style: solid;
+    border-color: crimson;
+    margin: 70px;
+}
+h3{
+    color: red;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+<div>
+  <h1>Data Binding</h1>
+</div>
+<div>
+  <ol>
+    <li>Add an input field which updates a property via 2 way binding</li>
+    <li>Output the property via string interpolation</li>
+    <li>Add a button which may be clicked if username is not empty</li>
+    <li>Upon clicking the button, username should be set to empty</li>
+  </ol>
+</div>
+<hr>
+<div>
+<label>Username:</label>
+<input type="text" [(ngModel)] = "username">
+<p>{{username}}</p>
+<button [disabled] ="username ==''"
+(click) = "username =''"
+class = "btn btn-primary">Reset Username</button>
+<div>
+
+
